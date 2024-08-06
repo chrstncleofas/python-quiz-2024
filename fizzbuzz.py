@@ -16,4 +16,4 @@ def fizzbuzz(n: int) -> None:
         else:
             print(i)
 
-fizzbuzz(15)
+fizzbuzz(20)

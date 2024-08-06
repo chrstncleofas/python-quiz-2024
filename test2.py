@@ -19,10 +19,25 @@ listOfMember = [
     },
 ]
 
-for memberDetails in listOfMember:
-    fname = memberDetails['Firstname']
-    lname = memberDetails['Lastname']
-    age = memberDetails['Age']
-    address = memberDetails['Address']
+class ObjectClass:
+    def information(fname: str, lname: str, age: str, address: str):
+        print('Firstname: ', fname)
+        print('Lastname: ', lname)
+        print('Age: ', age)
+        print('Address: ', address)
 
-    print(fname, lname, age, address)
+    for memberDetails in listOfMember:
+        fname = memberDetails['Firstname']
+        lname = memberDetails['Lastname']
+        age = memberDetails['Age']
+        address = memberDetails['Address']
+
+        print('------------------------')
+        information(
+            fname=fname,
+            lname=lname,
+            age=age,
+            address=address
+        )
+
+ObjectClass()
